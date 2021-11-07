@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import {vw, vh, vmin, vmax} from './viewport';
+import {vw, vh, vmin, vmax} from '../viewport';
 const style = StyleSheet.create({
   title: {
     fontWeight: '900',

@@ -11,7 +11,7 @@ export default class TodoList extends Component {
           id: 1,
           title: 'Visit doctor',
           subTitle: 'Remember to bring your documents',
-          time: '14:43',
+          time: '14:44',
           completed: false,
         },
         {
