@@ -1,2 +1,2 @@
-import App from './src/ch5';
+import App from './src/ch6';
 export default App;
