@@ -13,7 +13,7 @@ const style = StyleSheet.create({
     backgroundColor: 'white',
     borderLeftColor: 'blue',
     borderLeftWidth: 5,
-    marginTop: 10,
+    marginBottom: 15,
     padding: 10,
     display: 'flex',
     justifyContent: 'space-between',
@@ -22,7 +22,7 @@ const style = StyleSheet.create({
     elevation: 10,
   },
   hm: {
-    height: 100 * vh,
+    height: 97 * vh,
   },
   wm: {
     width: 100 * vw,

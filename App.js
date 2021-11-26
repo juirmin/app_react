@@ -1,2 +1,2 @@
-import App from './src/ch6';
+import App from './src/clock';
 export default App;

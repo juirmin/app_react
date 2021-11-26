@@ -6,7 +6,7 @@ export default class TodoList extends Component {
   constructor() {
     super();
     this.state = {
-      todos: [
+      todo: [
         {
           id: 1,
           title: 'Visit doctors',
@@ -118,26 +118,24 @@ export default class TodoList extends Component {
 
   render() {
     return (
-      <ScrollView>
-        <View
+      <View
+        style={[
+          {
+            display: 'flex',
+            alignItems: 'center',
+          },
+          style.hm,
+        ]}>
+        <Text
           style={[
-            {
-              display: 'flex',
-              alignItems: 'center',
-              marginBottom: 10,
-            },
+            {fontWeight: '900', fontSize: 20, color: 'black', marginTop: 10},
           ]}>
-          <Text
-            style={[
-              {fontWeight: '900', fontSize: 20, color: 'black', marginTop: 10},
-            ]}>
-            代辦事項
-          </Text>
-          <View>
-            <TodoItem todos={this.state.todos} />
-          </View>
-        </View>
-      </ScrollView>
+          代辦事項
+        </Text>
+        <ScrollView>
+          <TodoItem todos={this.state.todo} />
+        </ScrollView>
+      </View>
     );
   }
 }
