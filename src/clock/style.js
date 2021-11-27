@@ -17,6 +17,7 @@ const style = StyleSheet.create({
     backgroundColor: '#ff105e',
     borderRadius: 6,
     zIndex: 10,
+    elevation: 10,
   },
   min: {
     position: 'absolute',
@@ -25,6 +26,7 @@ const style = StyleSheet.create({
     backgroundColor: '#fff',
     borderRadius: 6,
     zIndex: 11,
+    elevation: 10,
   },
   sec: {
     position: 'absolute',
@@ -34,6 +36,7 @@ const style = StyleSheet.create({
     backgroundColor: '#000',
     borderRadius: 6,
     zIndex: 12,
+    elevation: 10,
   },
 });
 export default style;
