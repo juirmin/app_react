@@ -30,7 +30,6 @@ const style = StyleSheet.create({
   },
   sec: {
     position: 'absolute',
-    position: 'absolute',
     width: 2,
     height: 150,
     backgroundColor: '#000',

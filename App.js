@@ -1,2 +1,2 @@
-import App from './src/ch7';
+import App from './src/ig';
 export default App;
