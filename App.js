@@ -1,2 +1,2 @@
-import App from './src/mid1';
+import App from './src/midterm';
 export default App;
