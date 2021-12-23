@@ -10,7 +10,7 @@ import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
  *     1. 可多善用參數傳遞的技巧，判斷設備狀態統計項目文字是否加入不同的顯示樣式
  *     2. 【進階實作範圍】可多善用條件運算式的技巧，判斷是否加入樣式設定
  */
-const StatusItem = ({props, cr, onLongPress, onPress}) => {
+const StatusItem = ({props, cr, onLongPress, onPress, mode}) => {
   /**
    * TODO: 此處僅為提供設備顯示狀態項目而撰寫的範例，請自行實作產生每個設備顯示狀態項目
    */
@@ -21,7 +21,11 @@ const StatusItem = ({props, cr, onLongPress, onPress}) => {
       onLongPress={() =>
         props.id && onLongPress(props.id % 2 == 1 ? true : false)
       }>
-      <View style={styles.statusItem}>
+      <View
+        style={[
+          styles.statusItem,
+          mode == props.id && {borderColor: 'yellow', borderWidth: 2},
+        ]}>
         <Text>{props.name}</Text>
         <Text style={[styles.count, {color: cr}]}>{props.num}</Text>
         <Text style={[styles.tip, !props.showtip && {display: 'none'}]}>

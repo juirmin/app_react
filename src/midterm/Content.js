@@ -79,6 +79,7 @@ class Content extends React.Component {
             <Text style={styles.title}>設備狀態</Text>
             <StatusList
               props={this.state.devices}
+              mode={this.state.mode}
               onLongPress={this.handleToggleAll}
               onPress={this.handleChangeDisplayStatus}
             />
