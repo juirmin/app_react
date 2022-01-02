@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     margin: 16,
     right: 1,
-    bottom: 50,
+    bottom: 80,
     backgroundColor: '#6200EE',
   },
   dialog: {

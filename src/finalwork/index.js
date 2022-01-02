@@ -23,7 +23,7 @@ const MyComponent = () => {
 
   return (
     <Provider value={data}>
-      {/* <Banner /> */}
+      <Banner />
       <BottomNavigation
         barStyle={{backgroundColor: 'black'}}
         navigationState={{index, routes}}
